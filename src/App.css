@@ -14,7 +14,15 @@ section {
 }
 
 button {
-	padding: 2em 0.2em;
+	padding: 0.3em 2.2em;
 	border-radius: 0.3em;
 	border: 1px solid gray;
+	transition: 0.5s all;
+
+	/* Nested CSS */
+	&:hover {
+		cursor: pointer;
+		transform: rotateZ(-15deg) scale(1.3);
+		background-color: hotpink;
+	}
 }

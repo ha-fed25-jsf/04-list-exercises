@@ -1,12 +1,10 @@
 import "./App.css";
+import ColorSettings from './components/ColorSettings.jsx'
 
 function App() {
 	return (
 		<>
-			<section>
-				<p> hello world </p>
-
-			</section>
+			<ColorSettings />
 		</>
 	);
 }
