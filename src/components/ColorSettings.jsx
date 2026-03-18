@@ -57,7 +57,11 @@ const ColorSettings = () => {
 		{saved.length === 0
 		? <p> Inga sparade färger... </p>
 		: saved.map(({ id, name, color }) => (
-			<p key={id}> {name} tycker om {color}. </p>
+			<p key={id}> {name} tycker om {color}.
+				<button onClick={() => setSaved(
+					saved.filter( item => item.id !== id )
+				)}> Ta bort </button>
+			</p>
 		))}
 		</section>
 		</>
