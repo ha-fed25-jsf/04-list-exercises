@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import "./App.css";
 import ColorSettings from './components/ColorSettings.jsx'
+import CityList from './components/CityList.jsx';
+import { cities } from './data/cities.js';
 
 const COLORS = 'color-settings', CITIES = 'city-list'
 
 function App() {
-	const [view, setView] = useState(COLORS)
+	const [view, setView] = useState(CITIES)
 
 	return (
 		<>
@@ -15,6 +17,7 @@ function App() {
 			</header>
 
 			{view === COLORS && <ColorSettings />}
+			{view === CITIES && <CityList data={cities} />}
 		</>
 	);
 }
