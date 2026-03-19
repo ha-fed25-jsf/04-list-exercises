@@ -1,0 +1,13 @@
+
+.color-settings {
+
+	button {
+
+		/* Nested CSS */
+		&:hover {
+			cursor: pointer;
+			transform: rotateZ(-15deg) scale(1.3);
+			background-color: hotpink;
+		}
+	}
+}

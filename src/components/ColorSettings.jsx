@@ -53,7 +53,7 @@ const ColorSettings = () => {
 			</section>
 		) }
 
-		<section>
+		<section className="color-settings">
 		{saved.length === 0
 		? <p> Inga sparade färger... </p>
 		: saved.map(({ id, name, color }) => (
