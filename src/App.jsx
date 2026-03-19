@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import "./App.css";
 import ColorSettings from './components/ColorSettings.jsx'
-import CityList from './components/CityList.jsx';
+import CityList from './components/cityList/CityList.jsx';
 import { cities } from './data/cities.js';
 
 const COLORS = 'color-settings', CITIES = 'city-list'

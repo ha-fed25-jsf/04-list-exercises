@@ -1,0 +1,15 @@
+
+.city-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2em 0.5em;
+	border-radius: 0.2em;
+
+	&:nth-child(even) {
+		background-color: rgb(188, 179, 224);
+	}
+
+	/* TODO: hover-effekt hade varit nice... */
+	/* Kanske byta färg på Ändra och Ta bort? */
+
+}
