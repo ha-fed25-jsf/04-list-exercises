@@ -1,0 +1,21 @@
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+
+
+	button {
+		padding: 0.2em 0em;
+		width: 2em;
+	}
+
+	.separator {
+		border-bottom: 1px solid gray;
+		flex-grow: 1;
+	}
+
+	.amount-container {
+		display: flex;
+		gap: 0.5em;
+	}
+}
