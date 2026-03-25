@@ -1,0 +1,11 @@
+.todo-item {
+
+	&.done {
+		background-color: rgb(222, 211, 217);
+		color: gray;
+	}
+
+	&.in-progress {
+		background-color: rgb(229, 185, 239);
+	}
+}
