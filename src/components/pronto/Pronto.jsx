@@ -5,6 +5,8 @@ const Pronto = () => {
 	const [count, setCount] = useState(0)
 
 	const changeCount = diff => {
+		// om count+diff är minst 0, anropa setCount <- undvik, kommentaren berättar bara vad koden gör, det kan vi läsa direkt i koden
+		// Hindra att vi sätter count till ett värde mindre än 0 <- bättre, vi förklarar _varför_ koden finns
 		if( count + diff >= 0 )
 			setCount(count + diff)
 		// Krångligare lösning - undvik
